@@ -10,6 +10,7 @@ public class ProgramTests
     public void TestCalculatePowerSum(int input, int expected)
     {
         int actual = Program.CalculatePowerSum(input);
-        Assert.AreEqual(expected, actual);
+        Assert.That(actual, Is.EqualTo(expected));
     }
 }
+//.github/workflows/dotnet.yml
